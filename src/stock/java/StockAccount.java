@@ -54,7 +54,6 @@ public class StockAccount {
 //                    "\n stock price = " + s.getSharePrice() + "\nTotal price of stock = " + totalPrice + "\n");
 			System.out.format("%-10s            %-10.3f               %-10.3f         %-10.3f\n", s.getStockNames(),
 					s.getNumOfShare(), s.getSharePrice(), totalPrice);
-
 		}
 	}
 }
