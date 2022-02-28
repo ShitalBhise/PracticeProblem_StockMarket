@@ -4,22 +4,9 @@ public class StockManagement {
 
 	// instance variables
 	private String stockNames;
-	private Double numOfShare;
-	private Double sharePrice;
+	private int numOfShare;
+	private double sharePrice;
 
-	public StockManagement() {
-		super();
-	}
-
-	// Parameterized constructor
-	public StockManagement(String stockNames, Double numOfShare, Double sharePrice) {
-		super();
-		this.stockNames = stockNames;
-		this.numOfShare = numOfShare;
-		this.sharePrice = sharePrice;
-	}
-
-	// getters and setters
 	public String getStockNames() {
 		return stockNames;
 	}
@@ -28,20 +15,32 @@ public class StockManagement {
 		this.stockNames = stockNames;
 	}
 
-	public Double getNumOfShare() {
+	public int getNumOfShare() {
 		return numOfShare;
 	}
 
-	public void setNumOfShare(Double numOfShare) {
+	public void setNumOfShare(int numOfShare) {
 		this.numOfShare = numOfShare;
 	}
 
-	public Double getSharePrice() {
+	public double getSharePrice() {
 		return sharePrice;
 	}
 
-	public void setSharePrice(Double sharePrice) {
+	public void setSharePrice(double sharePrice) {
 		this.sharePrice = sharePrice;
 	}
 
+	@Override
+	public String toString() {
+		return "StockManagement {\nstockNames=" + stockNames + ", numOfShare=" + numOfShare + ", sharePrice="
+				+ sharePrice + "\n};";
+	}
+
+	public void Stock(String stockNames, int numOfShare, double sharePrice, double totalSharePrice) {
+		this.stockNames = stockNames;
+		this.numOfShare = numOfShare;
+		this.sharePrice = sharePrice;
+
+	}
 }
